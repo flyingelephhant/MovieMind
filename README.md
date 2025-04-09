@@ -66,10 +66,12 @@ To install all required libraries, open your terminal and run:
 pip install -r requirements.txt
 ```
 
-🖥️ Usage
+🖥️ Usage: 
+
 -Open the Jupyter notebook file Movie_Rating.ipynb or run the Python script.
 
 # Provide the following user inputs when prompted:
+
   🎬 Director's name
   🎭 Actor 1 name
   🎭 Actor 2 name
@@ -77,11 +79,13 @@ pip install -r requirements.txt
   ⏱️ Movie duration in minutes
 
 The system will:
+
   ⭐ Predict the IMDb rating
   ✅ Provide a recommendation category
   🎯 Suggest similar movies based on genre
 
 # 🔍 Project Details
+
   Data Collection
   We use a cleaned dataset Movie_Dataset_p.csv, which contains:
     🎥 Movie titles
@@ -94,19 +98,22 @@ The system will:
 For missing or unknown directors/actors, the system fetches data from TMDb API to improve accuracy.
 
 # Data Preprocessing
-  Preprocessing steps include:
-    Handling missing values
-    Cleaning whitespace and special characters
-    Standardizing text cases (lowercasing names)
-    Filling missing runtime and language values
-    Cleaning genres and actors/director name
-    Exploratory Data Analysis (EDA)
-    Visualized IMDb score distributions
-    Analyzed impact of duration on IMDb scores
-    Analyzed correlation between director's average rating and IMDb score
-    Created visual plots using Matplotlib and Seaborn
 
-# Feature Engineering
+  Preprocessing steps include:
+  
+  Handling missing values
+  Cleaning whitespace and special characters
+  Standardizing text cases (lowercasing names)
+  Filling missing runtime and language values
+  Cleaning genres and actors/director name
+  Exploratory Data Analysis (EDA)
+  Visualized IMDb score distributions
+  Analyzed impact of duration on IMDb scores
+  Analyzed correlation between director's average rating and IMDb score
+  Created visual plots using Matplotlib and Seaborn
+
+# Feature Engineering:
+
   Calculated average ratings for directors and actors
   One-hot encoded movie genres using MultiLabelBinarizer
   Built feature vectors for model training
@@ -114,11 +121,12 @@ For missing or unknown directors/actors, the system fetches data from TMDb API t
 # Modeling
 
   We trained multiple regression models:
-    Linear Regression
-    Random Forest Regressor
-    XGBoost Regressor
-    K-Nearest Neighbors
-    Multi-layer Perceptron (MLP)
+  
+  Linear Regression
+  Random Forest Regressor
+  XGBoost Regressor
+  K-Nearest Neighbors
+  Multi-layer Perceptron (MLP)
 
 ✅ The final selected model is Random Forest Regressor for its high accuracy.
  
@@ -126,8 +134,9 @@ Models and preprocessing data are saved using Pickle for easy deployment.
 
 # Evaluation
     We evaluated model performance using:
-    📉 Mean Squared Error (MSE)
-    📈 R² Score
+    
+    - 📉 Mean Squared Error (MSE)
+    - 📈 R² Score
 
 The Random Forest model performed the best in predicting IMDb ratings.
 
