@@ -187,12 +187,12 @@ We implemented:
 
 ## 🔗 References
 
-- TMDb API
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- XGBoost
-- TheFuzz
+- [TMDb API](https://developer.themoviedb.org/docs)
+- [Pandas](https://pandas.pydata.org/)
+- [Scikit-learn](https://scikit-learn.org/stable/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)
+- [TheFuzz](https://pypi.org/project/thefuzz/)
 
 ---
