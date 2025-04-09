@@ -64,6 +64,7 @@ To install all required libraries, open your terminal and run:
 
 ```bash
 pip install -r requirements.txt
+```
 
 🖥️ Usage
 To use this project:
