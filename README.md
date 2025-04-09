@@ -66,83 +66,83 @@ To install all required libraries, open your terminal and run:
 pip install -r requirements.txt
 ```
 
+
+
 🖥️ Usage: 
 
 -Open the Jupyter notebook file Movie_Rating.ipynb or run the Python script.
 
 # Provide the following user inputs when prompted:
-
-  🎬 Director's name
-  🎭 Actor 1 name
-  🎭 Actor 2 name
-  🎞️ Genres (comma-separated)
-  ⏱️ Movie duration in minutes
+🎬 Director's name
+🎭 Actor 1 name
+🎭 Actor 2 name
+🎞️ Genres (comma-separated)
+⏱️ Movie duration in minutes
 
 The system will:
-
-  ⭐ Predict the IMDb rating
-  ✅ Provide a recommendation category
-  🎯 Suggest similar movies based on genre
+⭐ Predict the IMDb rating
+✅ Provide a recommendation category
+🎯 Suggest similar movies based on genre
 
 # 🔍 Project Details
 
-  Data Collection
-  We use a cleaned dataset Movie_Dataset_p.csv, which contains:
-    🎥 Movie titles
-    🎬 Director names
-    🎭 Actor names
-    🎞️ Genres
-    ⭐ IMDb ratings
-    ⏱️ Runtime
-    🗣️ Language  
+Data Collection
+We use a cleaned dataset Movie_Dataset_p.csv, which contains:
+-🎥 Movie titles
+-🎬 Director names
+-🎭 Actor names
+-🎞️ Genres
+-⭐ IMDb ratings
+-⏱️ Runtime
+-🗣️ Language  
 For missing or unknown directors/actors, the system fetches data from TMDb API to improve accuracy.
 
 # Data Preprocessing
 
-  Preprocessing steps include:
-  
-  Handling missing values
-  Cleaning whitespace and special characters
-  Standardizing text cases (lowercasing names)
-  Filling missing runtime and language values
-  Cleaning genres and actors/director name
-  Exploratory Data Analysis (EDA)
-  Visualized IMDb score distributions
-  Analyzed impact of duration on IMDb scores
-  Analyzed correlation between director's average rating and IMDb score
-  Created visual plots using Matplotlib and Seaborn
+Preprocessing steps include:
+-Handling missing values
+-Cleaning whitespace and special characters
+-Standardizing text cases (lowercasing names)
+-Filling missing runtime and language values
+-Cleaning genres and actors/director name
+-Exploratory Data Analysis (EDA)
+-Visualized IMDb score distributions
+-Analyzed impact of duration on IMDb scores
+-Analyzed correlation between director's average rating and IMDb score
+-Created visual plots using Matplotlib and Seaborn
 
 # Feature Engineering:
 
-  Calculated average ratings for directors and actors
-  One-hot encoded movie genres using MultiLabelBinarizer
-  Built feature vectors for model training
+Calculated average ratings for directors and actors
+One-hot encoded movie genres using MultiLabelBinarizer
+Built feature vectors for model training
 
 # Modeling
 
-  We trained multiple regression models:
-  
-  Linear Regression
-  Random Forest Regressor
-  XGBoost Regressor
-  K-Nearest Neighbors
-  Multi-layer Perceptron (MLP)
+We trained multiple regression models:
+*Linear Regression*
+*Random Forest Regressor
+*XGBoost Regressor
+*K-Nearest Neighbors
+*Multi-layer Perceptron (MLP)
 
 ✅ The final selected model is Random Forest Regressor for its high accuracy.
  
 Models and preprocessing data are saved using Pickle for easy deployment.
 
 # Evaluation
-    We evaluated model performance using:
-    
-    - 📉 Mean Squared Error (MSE)
-    - 📈 R² Score
+We evaluated model performance using:
+- 📉 Mean Squared Error (MSE)
+-  - 📈 R² Score
 
 The Random Forest model performed the best in predicting IMDb ratings.
 
 # Recommendation System
-    Based on genre similarity, we use cosine similarity to recommend similar movies.
-    The system outputs the top 5 recommended movies along with their genres and IMDb scores.
+   
+Based on genre similarity, we use cosine similarity to recommend similar movies.
+The system outputs the top 5 recommended movies along with their genres and IMDb scores.
+
+---
 
 ## ✅ Conclusion
 In this project, we successfully built an end-to-end movie rating prediction and recommendation system.
@@ -159,10 +159,11 @@ In this project, we successfully built an end-to-end movie rating prediction and
 
   🎯 Genre-based movie recommendation engine
 
-# 🔗 References
-TMDb API
+---
+# 🔗 References:
+-TMDb API
 Pandas
-Scikit-learn
+-Scikit-learn
 Matplotlib
 Seaborn
 XGBoost
